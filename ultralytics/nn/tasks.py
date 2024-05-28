@@ -885,8 +885,7 @@ def parse_model(d, ch, verbose=True):  # model_dict, input_channels(3)
             nn.ConvTranspose2d,
             DWConvTranspose2d,
             C3x,
-            RepC3,
-            EMA,RFBconv
+            RepC3
         }:
             c1, c2 = ch[f], args[0]
             if c2 != nc:  # if c2 not equal to number of classes (i.e. for Classify() output)
